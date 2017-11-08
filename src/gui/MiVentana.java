@@ -1,54 +1,53 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package gui;
-//paso 1 - IMPORTAR Libreria graficas
+//PASO1 IMPORTAR 
 import graficas.*;
-import javax.swing.*;// Libreria gràfica estandar multiplataforma
-import java.awt.*; // Libreria Grafica del Sistema operativo
-//paso 8 - Importar la clase que contiene la gui
-import gui.MiVentana; //paquete.clase
-
+import javax.swing.*;//libreria grafica standar multiplataforma
+import java.awt.*;//libreria grafica del sistema OPERATIVO
 /**
  *
- * @author LAB18
+ * @author LP 13
  */
-//paso 2- Heredar mi clase desde JFrame
-public class MiVentana extends JFrame {
-    
+//paso2 heredar mi  clase desde jframe
+public class MiVentana extends JFrame{
 
-    //Paso 3- Declarar los elemnetos que vamos a utilizar
-    JPanel mipanel; //Creacion de objetos Jpanel
+  //paso 3 declara  los  elementos  que   vamos a  utulizar
+    JPanel mipanel;//creacion  de objeto  panel
     JLabel milabel;
     JTextField mitexto;
-    JButton miboton;
-    //Paso 4 -Definicion del constructor de la clase
-    public MiVentana()//Tiene el mismo nombre de la clase 
-    
+    JButton miboton;    
+    //paso4 definicion del constructoc de la clase
+    public MiVentana() //tiene  el  mismo  nombre  de la clase
     {
-     //Paso 5- Crear e inicializar los objetos que utilizaremos
-        mipanel = new JPanel(); //Creamos el objeto
-        milabel = new JLabel();
-        mitexto = new JTextField(10);// 10 son los caracteres
-        miboton = new JButton ();
-        //Paso 6- Agregar los elementos al JFrame
-        this.add(mipanel); //Agrego el Jpanel al JFrame
-        mipanel.add(milabel);//Agrego los elemntos al JPanel
-        mipanel.add(mitexto);
-        mipanel.add(miboton);
-        //Paso 7 - Propiedades de los elementos
-        milabel.setText("campo");//
-        miboton.setText("presioname");
-        
+        //paso 5 crear e  inicializar los  objetos que utilizaremos
+    mipanel = new JPanel();
+    milabel = new JLabel();
+    mitexto = new JTextField();//10 son  los  caracteres
+    miboton = new JButton();
+    // paso 6 agregar los elementos  al jframe
+    this.add(mipanel);//agrego el panel al  frame
+    mipanel.add(milabel);//agrego los  elementos al joanel
+    mipanel.add(mitexto);
+    mipanel.add(miboton);
+    //paso7 propiedades de los  elementos
+    milabel.setText("campo");
+    miboton.setText("presioname");
+    
     }
-   /* public static void main(String[] args) 
-    {
-      JFrame miventana =new JFrame();   // Creamos un Objetos tipo JFrame
-      miventana.setVisible(true);// estas sentencia muestra la ventana
-      miventana.setBounds(0, 0, 400, 400);//Le asignamos tamaño a la ventana
-      miventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Esta sentencia cierra la ventana
-      }*/
-    
 }
+    /*public static void main(String[] args) 
+{
+        // TODO code application logic here
+   JFrame miventana = new JFrame(); // creamos un  objeto jframe
+   miventana.setVisible(true);// esta  sentencia muestra la  ventana
+   miventana.setBounds(0, 0, 400, 400);//le  asignamos tamaño a la  ventana
+   miventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//esta  sentencia cierra la ventana 
+}      
+    */
+    
+

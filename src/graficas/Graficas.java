@@ -4,27 +4,28 @@
  * and open the template in the editor.
  */
 package graficas;
-//paso 1 - IMPORTAR Libreria graficas
-import javax.swing.*;// Libreria gràfica estandar multiplataforma
-import java.awt.*; // Libreria Grafica del Sistema operativo
-
+//PASO1 IMPORTAR 
+import javax.swing.*;//libreria grafica standar multiplataforma
+import java.awt.*;//libreria grafica del sistema OPERATIVO
+//paso 8 importar la clase que  contiene la gui
+import gui.MiVentana;
 /**
  *
- * @author LAB18
- */
-import gui.MiVentana; //paquete.clase
-public class Graficas {
+ * @author LP 13
+ */public class Graficas {
 
     /**
      * @param args the command line arguments
      */
-    //paso 9 llama ala clase
+    //llamado de la  clase
     public static void main(String[] args) 
     {
-       MiVentana miventana =new JFrame();   // Creamos un Objetos tipo JFrame
-      miventana.setVisible(true);// estas sentencia muestra la ventana
-      miventana.setBounds(0, 0, 400, 400);//Le asignamos tamaño a la ventana
-      miventana.setDefaultOperation(JFrame.EXIT_on_ClOSE);//Esta sentencia cierra la ventana
+        // TODO code application logic here
+  MiVentana miventana = new MiVentana(); // creamos un  objeto jframe
+   miventana.setVisible(true);// esta  sentencia muestra la  ventana
+   miventana.setBounds(0, 0, 400, 400);//le  asignamos tamaño a la  ventana
+   miventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//esta  sentencia cierra la ventana 
+        
     }
     
 }
